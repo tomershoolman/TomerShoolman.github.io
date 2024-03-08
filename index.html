@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomer Shoolman</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/ts-symbol.png">
+    <script src="https://kit.fontawesome.com/4d93f5fd12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="title-name"><a href="index.html" >Tomer Shoolman</a></h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+        </div>
+    </div>
+    <!------------------about----------------->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>   
+    <div id="about">    
+        <div class="container">
+            <div class="info">
+                <h1>Hey! My name is <span class="name-about">Tomer Shoolman</span> </h1> 
+                <h1>A second-year C.S & Entrepreneurship student</h1> 
+                <h1>And I'm a <span class="multiple-text"></span> </h1>
+            </div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Images/Tomer_Big.JPG">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title1">About Me</h1>
+                    <p class="info2"> 
+                    A second-year C.S & Entrepreneurship student at Reichman University.  <br> Tech geek. Product. Data Analyst. 
+                    <br>Open-minded, diligent, Initiative, team-worker and creative.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Product Management</span><br>Transforming inbound ideas into realized products, navigating the journey from concept to Game Design Document (GDD) creation for games.  <br> My technical prowess, problem-solving, and multitasking abilities add to execution across all stages of product development.</li>
+                            <li><span>Data Analyst</span><br>Using Python libraries (NumPy, Pandas, Matplotlib) along with SQL and advanced tools like ELK and Splunk, to analyze and visualize data.
+                                <br>My major hobby in data analysis is analyzing finance data (Yfinance library). In the past, I mainly analyzed network data.</li>
+                            <li><span>Web Development</span><br>Web app Development using HTML, CSS, JS</li>
+                            <li><span>Game Development</span><br>Developing 3D games (C#) utilizing Unity's engine.<br> Implementing game mechanics, physics, while also designing 3D environments.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>Manager & Head of Mentoring Program - <a href="https://www.vcclub.org/" target="_blank">IDC VC Club</a> (Volunteer)</li>
+                            <li><span>2023 - 2024</span><br>Co-founder & CPO - <a href="https://www.hasbaramap.com/" target="_blank">HasbaraMap</a> (Volunteer)</li>
+                            <li><span>2018 - 2021</span><br>Data & Cyber analyst - IDF intelligence corps </li>
+                            <li><span>2015 - 2020</span><br>Video Editor - Freelancer </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education" >
+                        <ul>
+                            <li><span>Reichman University (Oct. 2022 – Present) </span><br>2nd year <br>BSc in Computer Science & BA in Entrepreneurship </li>
+                            <li><span>Maccabim-Reut MOR High School (2015-2018)</span><br>Full high school diploma<br> 5 units - Mathematics, Communication, Computer Science, and English</li>
+                            <li><span>Extensive Courses (2017-2018)</span><br>COURSERA (University of Michigan) - Python Data Structures & Using Python to Access Web Data<br>Xtra Student - Python Programming course, 28 academic hours</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="container">
+            <div class="contact">
+                <h1> Contact Me</h1>
+                <h2><i class="fa-solid fa-phone"></i> +972-54-3534858 | <i class="fa-solid fa-envelope"></i> tomer.shoolman@gmail.com | <a href="https://www.linkedin.com/in/tomershoolman/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/tomershoolman</a> | <a href="/Tomer Shoolman CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------script--------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks)
+            {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        const typed = new Typed('.multiple-text', {
+            strings:['Product Manager', 'Data Analyst', 'Web Developer', 'Games Developer'],
+            typeSpeed:70,
+            backSpeed:70,
+            backDelay:1000,
+            loop:true,
+        });
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

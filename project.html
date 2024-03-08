@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomer Shoolman</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/ts-symbol.png">
+    <script src="https://kit.fontawesome.com/4d93f5fd12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="title-name"><a href="index.html" >Tomer Shoolman</a></h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+        </div>
+    </div>
+    <!------------------portfolio--------------->
+    <div class="portfolio">
+        <div class="container-portfolio">
+            <h1 class="sub-title-project">My projects</h1>
+            <div class="project-card">
+                <div class="project-card-col-2">
+                    <h3 class="sub-h3-title">Rujum 3D</h3>
+                    <p class="role"> Development, Product, Design</p>
+                    <p class="desc">
+                        "Rujum" is a web game that elevates the classic balancing act of Rujum to new heights. With each level, players are tasked with strategically stabilizing various objects, honing their skills in anticipation and precision.
+                    </p>
+                    <p class="links">
+                        <br><br> <a href="https://github.com/tomershoolman/Demo-Rujum" target="_blank">GitHub Code</a> | <a href="rujum/rec.mp4" target="_blank">Video Demo</a> | <a href="rujum/Rujum GDD.pdf" target="_blank">GDD</a> 
+                    </p>
+                </div>
+                <div class="project-card-col-1">
+                    <img src="Images/Rujum2.png">
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-card-col-2">
+                    <h3 class="sub-h3-title">Nand2Tetirs</h3>
+                    <p class="role"> Development</p>
+                    <p class="desc">
+                        "Nand2Tetris" course takes learners through the creation of a computer, starting with constructing hardware from NAND gates and culminating in developing software, an operating system, and applications for a complete, operational system.
+                    </p>
+                    <p class="links">
+                        <br> <a href="#" target="_blank">GitHub Code</a> | <a href="https://www.nand2tetris.org/" target="_blank">Nand2Tetris Site</a> 
+                    </p>
+                </div>
+                <div class="project-card-col-1">
+                    <img src="Images/nand2tetris.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-col-2">
+                    <h3 class="sub-h3-title">Wataste</h3>
+                    <p class="role"> Ideation</p>
+                    <p class="desc">
+                        Wataste tablets offer a health-conscious solution to flavor water with zero calories and no sugar. These effervescent tablets dissolve to create a refreshing, juice-like drink, perfect for anyone watching their sugar intake.
+                    </p>
+                    <p class="links">
+                        <br><br> <a href="wataste/Wataste presentation.pdf" target="_blank">Deck</a> | <a href="wataste/FastJuice market research - products.pdf.zip" target="_blank">Market research</a> 
+                    </p>
+                </div>
+                <div class="project-card-col-1">
+                    <img src="Images/wataste.png">
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-card-col-2">
+                    <h3 class="sub-h3-title">Luzit</h3>
+                    <p class="role"> Ideation</p>
+                    <p class="desc">
+                        Luzit is an innovative software designed to optimize time management and elevate goal achievement. It intelligently organizes your calendar by prioritizing tasks, ensuring punctuality, and advancing your progress towards your objectives
+                    </p>
+                    <p class="links">
+                        <br> <a href="luzit/Luzit PR.pdf" target="_blank">PR</a> | <a href="luzit/LUZIT.pdf" target="_blank">How it works</a> 
+                    </p>
+                    
+                </div>
+                <div class="project-card-col-1">
+                    <img src="Images/luzit.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="container">
+            <div class="contact">
+                <h1> Contact Me</h1>
+                <h2><i class="fa-solid fa-phone"></i> +972-54-3534858 | <i class="fa-solid fa-envelope"></i> tomer.shoolman@gmail.com | <a href="https://www.linkedin.com/in/tomershoolman/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/tomershoolman</a> | <a href="/Tomer Shoolman CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a></h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
